@@ -55,7 +55,7 @@ Airbnb pricing is highly variable and depends on numerous factors, making it dif
 
 1.  Clone the repository to your local machine:
     ```bash
-    git clone [repository URL]
+    git clone https://github.com/florencia-ogorinsky/Hackaton2
     ```
 2.  Install the required libraries:
     ```bash
