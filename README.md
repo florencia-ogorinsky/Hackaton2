@@ -59,7 +59,8 @@ Host Information: Host verification status.
 
 
 📌 Conclusion
-Airbnb Price Comparison Tool provides a comprehensive analysis of Airbnb listing prices, helping users and hosts understand pricing dynamics and make informed decisions. By leveraging these insights, users can find fair-priced listings, and hosts can optimize their pricing strategies.
+By segmenting the dataset based on borough and training individual Random Forest, Linear Regression, and Gradient Boosting models, we observed a substantial improvement in prediction accuracy compared to a single, generalized model.
+
 
 ⭐ Contributions & Feedback are Welcome!
 📩 Feel free to open issues or pull requests to enhance the project.
