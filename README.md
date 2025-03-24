@@ -1,74 +1,71 @@
 # Airbnb Price Comparison Tool
 
-## Project Overview
+## 📌 Overview
+**Airbnb Price Comparison Tool** is a data analysis project focused on developing a tool to estimate and compare Airbnb listing prices. The goal is to analyze various factors influencing Airbnb pricing and provide insights to both users and hosts for better decision-making.
 
-In this project, we aimed to develop a price comparison tool for Airbnb listings, addressing the challenges of price variability and information overload for both users and hosts. Trying to find the best features that would help us train our model and predict the prices, we faced some issues, like the correlation between them were not so strong. So, we decided to split our data into subgroups by location. Airbnb prices are heavily influenced by location. Grouping neighborhoods allows for analysis of price differences between distinct areas. This approach significantly improved our prediction accuracy according to the location in the US.
+The dataset includes attributes such as location, room type, amenities, reviews, and other features to predict and analyze Airbnb listing prices.
 
-## Problem Statement
+## ❓ Problem It Solves
+Airbnb pricing is highly variable and depends on numerous factors, making it challenging for users to determine fair prices and for hosts to set competitive rates. This project enables:
+- Accurate price estimation based on listing attributes.
+- Price comparison across different locations and listing types.
+- Identification of key factors influencing Airbnb prices.
+- Data-driven insights to optimize pricing strategies for hosts.
 
-Airbnb pricing is highly variable and depends on numerous factors, making it difficult for users to determine fair prices and for hosts to set competitive rates. This project addresses the need for a tool that simplifies price comparisons and provides insights into price determinants.
+## 🚀 Features
+✅ **Data Preprocessing**: Handles missing data, removes duplicates, and transforms categorical variables to ensure clean and usable data.
+✅ **Feature Engineering**: Creates new features and groups neighborhoods to improve prediction accuracy.
+✅ **Correlation Analysis**: Identifies relationships between listing attributes and price.
+✅ **Subgroup Analysis**: Analyzes subgroups based on location to improve model accuracy.
+✅ **Predictive Modeling**: Develops a model to estimate Airbnb prices based on relevant features.
+✅ **Visualization**: Provides visualizations to understand price distributions and feature impacts.
 
-## Methodology
+## 🛠 How to Run
+### Prerequisites
+Ensure you have:
+- **Python 3.x** installed
+- **Jupyter Notebook** or a Python interpreter (e.g., VS Code)
+- Required libraries: `pandas`, `numpy`, `scipy`, `matplotlib`, `seaborn`, `scikit-learn`, `kagglehub`, `datetime`
 
-1.  **Data Acquisition:**
-    * Downloaded the Airbnb Open Data dataset from Kaggle using `kagglehub`.
-2.  **Data Cleaning and Preprocessing:**
-    * Loaded the CSV data using `pandas`.
-    * Sampled 5% of the data for efficiency.
-    * Inspected the data structure and identified missing values.
-    * Removed columns with high missing values ('house_rules', 'license').
-    * Removed rows with missing latitude and longitude.
-    * Extracted currency and numerical values from 'price' and 'service fee' columns.
-    * Handled missing numerical values by imputing with the median.
-    * Handled missing categorical values by imputing with the mode.
-    * Converted 'last review' to datetime and handled missing dates.
-    * Removed duplicate rows.
-    * Converted boolean 'instant_bookable' to integers.
-    * Combined 'price' and 'service fee' into 'total_price'.
-    * Transformed categorical variables ('host_identity_verified', 'neighbourhood group', 'cancellation_policy', 'room type') using one-hot encoding.
-3.  **Feature Engineering:**
-    * Recognized the strong influence of location on price.
-    * Grouped neighborhoods to improve prediction accuracy.
-4.  **Model Development:**
-    * (Add information about the model you used, training, evaluation, etc.)
-    * Developed a predictive model to estimate Airbnb prices based on location and other relevant features.
-    * Trained and evaluated the model's performance on the preprocessed dataset.
-5.  **Subgroup Analysis:**
-    * Divided the dataset into subgroups based on geographical location.
-    * Trained and evaluated models for each subgroup to enhance accuracy.
-
-## Key Findings
-
-* Location is a critical determinant of Airbnb prices.
-* Grouping neighborhoods significantly improves price prediction accuracy.
-* (Add other key findings related to price determinants, e.g., impact of reviews, room type, etc.)
-
-## Technologies Used
-
-* **Python:** Programming language used for data analysis and model development.
-* **Pandas:** Data manipulation and analysis.
-* **NumPy:** Numerical computations.
-* **Scikit-learn:** Machine learning library.
-* **Kagglehub:** Dataset download from Kaggle.
-
-## How to Run the Code
-
-1.  Clone the repository to your local machine:
-    ```bash
-    git clone https://github.com/florencia-ogorinsky/Hackaton2
-    ```
-2.  Install the required libraries:
-    ```bash
-    pip install pandas scikit-learn kagglehub numpy datetime
-    ```
-3.  Run the main Python script:
-    ```bash
-    python [script name].py
-    ```
-    (Provide specific instructions on how to run your code, including any data dependencies)
+### Installation & Execution
+1️⃣ **Clone the Repository**:
+```bash
+git clone [https://github.com/florencia-ogorinsky/Hackaton2.git](https://github.com/florencia-ogorinsky/Hackaton2.git)
 
 
-## Contributors
+2️⃣ Install Dependencies:
+pip install pandas numpy scipy matplotlib seaborn scikit-learn kagglehub datetime
 
-* Margo Tiamanova
-* Florencia Ogorinsky
+
+3️⃣ Run the Analysis:
+-Open Jupyter Notebook
+-Execute code blocks sequentially to analyze data and generate insights.
+
+
+4️⃣ Dataset:
+The dataset is downloaded from Kaggle using kagglehub.
+
+📊 Understanding the Data
+The dataset includes various Airbnb listing attributes, such as:
+
+Price: Listing price.
+Location: Neighborhood and neighborhood group.
+Room Type: Private room, entire home/apt, shared room.
+Reviews: Number of reviews and last review date.
+Amenities: Available amenities.
+Cancellation Policy: Cancellation policy for the listing.
+Host Information: Host verification status.
+... and many more.
+
+
+📌 Conclusion
+Airbnb Price Comparison Tool provides a comprehensive analysis of Airbnb listing prices, helping users and hosts understand pricing dynamics and make informed decisions. By leveraging these insights, users can find fair-priced listings, and hosts can optimize their pricing strategies.
+
+⭐ Contributions & Feedback are Welcome!
+📩 Feel free to open issues or pull requests to enhance the project.
+
+📌 Authors: Margo Tiamanova & Florencia Ogorinsky
+
+
+
+
